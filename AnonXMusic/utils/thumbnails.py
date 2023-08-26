@@ -82,7 +82,7 @@ async def gen_thumb(videoid, user_id):
         x = f.resize((200, 200))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"AnonX/assets/anonx.png")
+        bg = Image.open(f"AnonXMusic/assets/anonxmusic.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(10))
@@ -117,10 +117,10 @@ async def gen_thumb(videoid, user_id):
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("AnonX/assets/font2.ttf", 37)
-        ImageFont.truetype("AnonX/assets/font2.ttf", 62)
-        arial = ImageFont.truetype("AnonX/assets/font2.ttf", 26)
-        ImageFont.truetype("AnonX/assets/font.ttf", 26)
+        font = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 37)
+        ImageFont.truetype("AnonXMusic/assets/font2.ttf", 62)
+        arial = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 26)
+        ImageFont.truetype("AnonXMusic/assets/font.ttf", 26)
         para = textwrap.wrap(title, width=28)
         try:
             draw.text(
@@ -220,7 +220,7 @@ async def gen_qthumb(videoid, user_id):
         x = f.resize((200, 200))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"AnonX/assets/anonx.png")
+        bg = Image.open(f"AnonXMusic/assets/anonxmusic.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(10))
@@ -255,10 +255,10 @@ async def gen_qthumb(videoid, user_id):
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("AnonX/assets/font2.ttf", 37)
-        ImageFont.truetype("AnonX/assets/font2.ttf", 62)
-        arial = ImageFont.truetype("AnonX/assets/font2.ttf", 26)
-        ImageFont.truetype("AnonX/assets/font.ttf", 26)
+        font = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 37)
+        ImageFont.truetype("AnonXMusic/assets/font2.ttf", 62)
+        arial = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 26)
+        ImageFont.truetype("AnonXMusic/assets/font.ttf", 26)
         para = textwrap.wrap(title, width=28)
         try:
             draw.text(
